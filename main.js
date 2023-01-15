@@ -54,7 +54,7 @@ const loadingDiv = document.getElementById('loading');
 const loader = new GLTFLoader();
 loader.setDRACOLoader(dracoLoader);
 loader.load(
-	'VR Therapy Scene.glb',
+	'/VR Therapy Scene.glb',
 	function (gltf) {
 		// hide loading div
 		loadingDiv.style.display = 'none';
@@ -832,7 +832,7 @@ loader2.load(
 const imgLoader = new THREE.ImageLoader();
 
 // load picture 1 image with transparent background
-imgLoader.load('./img/vr-6770800_640.png', function (image) {
+imgLoader.load('/img/vr-6770800_640.png', function (image) {
 	// create the texture
 	const texture = new THREE.Texture(image);
 	texture.needsUpdate = true;
@@ -853,7 +853,7 @@ imgLoader.load('./img/vr-6770800_640.png', function (image) {
 });
 
 // load picture 2 image with transparent background
-imgLoader.load('./img/trophy-png-23.png', function (image) {
+imgLoader.load('/img/trophy-png-23.png', function (image) {
 	// create the texture
 	const texture = new THREE.Texture(image);
 	texture.needsUpdate = true;
@@ -874,7 +874,7 @@ imgLoader.load('./img/trophy-png-23.png', function (image) {
 });
 
 // load picture 3 image with transparent background
-imgLoader.load('./img/1377892.png', function (image) {
+imgLoader.load('/img/1377892.png', function (image) {
 	// create the texture
 	const texture = new THREE.Texture(image);
 	texture.needsUpdate = true;
@@ -898,7 +898,7 @@ imgLoader.load('./img/1377892.png', function (image) {
 
 // load picture 4 image with transparent background
 imgLoader.load(
-	'./img/Oculus-Rift-CV1-Headset-Front_with_transparent_background.png',
+	'/img/Oculus-Rift-CV1-Headset-Front_with_transparent_background.png',
 	function (image) {
 		// create the texture
 		const texture = new THREE.Texture(image);
