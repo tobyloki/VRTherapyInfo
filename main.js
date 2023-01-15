@@ -108,12 +108,12 @@ document.body.appendChild(labelRenderer.domElement);
 const loadingPercent = document.getElementById('loadingPercent');
 
 function onProgress(xhr) {
-	// if (xhr.lengthComputable) {
-	const percentComplete = (xhr.loaded / xhr.total) * 100;
-	console.log(Math.round(percentComplete) + '% downloaded');
+	if (xhr.lengthComputable) {
+		const percentComplete = (xhr.loaded / xhr.total) * 100;
+		console.log(Math.round(percentComplete) + '% downloaded');
 
-	loadingPercent.innerHTML = 'Loading: ' + Math.round(percentComplete) + '%';
-	// }
+		loadingPercent.innerHTML = 'Loading: ' + Math.round(percentComplete) + '%';
+	}
 }
 
 // object interaction listener material
